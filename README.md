@@ -28,39 +28,50 @@ Për të instaluar të gjitha kërkesat e tjera, mund të përdorni:
 
 
 pip install -r requirements.txt
+
 Ekzekutimi i Serverit
+
 Pasi të keni instaluar të gjitha kërkesat, mund ta filloni serverin Flask me këtë komandë:
 
-
 python blockchain.py
+
 Kjo do të nisë serverin lokal në http://127.0.0.1:5000/, i cili do të pranojë kërkesa HTTP.
+
 
 API
 GET /chain: Kjo kërkesë do të kthejë zinxhirin e të gjitha blloqeve të krijuara.
 
-
 curl -X GET "http://127.0.0.1:5000/chain"
+
+
 POST /mine: Kjo kërkesë do të minojë një bllok të ri dhe do të shtojë një transaksion të ri në blockchain.
 
-
 curl -X POST http://127.0.0.1:5000/mine -H "Content-Type: application/json" -d '{"data": "Transaksioni i par"}'
+
+
 GET /validate: Kjo kërkesë kontrollon nëse zinxhiri është valid.
 
-
 curl -X GET "http://127.0.0.1:5000/validate"
+
+
+
 Përdorimi i API-së me CURL
 Për të parë zinxhirin:
 
-
 curl -X GET "http://127.0.0.1:5000/chain"
+
+
 Për të minuar një bllok të ri:
 
-
 curl -X POST http://127.0.0.1:5000/mine -H "Content-Type: application/json" -d '{ "data": "Transaksioni i par" }'
-Për të validuar zinxhirin:
 
+Për të validuar zinxhirin:
 curl -X GET "http://127.0.0.1:5000/validate"
+
+
 Skedari requirements.txt
+
+
 Për të instaluar të gjitha kërkesat, sigurohuni që të keni skedarin requirements.txt me përmbajtjen e mëposhtme:
 
 
