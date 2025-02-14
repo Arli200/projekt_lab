@@ -1,9 +1,13 @@
 # projekt_lab
 Projekti i lendes LAB i integruar
+
+
 Blockchain Project
 Ky është një projekt për krijimin e një blockchain të thjeshtë duke përdorur Python. Ky projekt ka për qëllim të ndihmojë përdoruesit të kuptojnë konceptet bazë të teknologjisë Blockchain, si dhe të implementojnë një shembull të thjeshtë të tij.
 
 Përmbajtja e Projektit
+
+
 Ky projekt përmban:
 
 Blockchain: Një zinxhir blloqesh që ruan të dhënat e transaksioneve.
